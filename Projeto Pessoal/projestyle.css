@@ -1,0 +1,44 @@
+header{
+    background-color: rgb(231, 116, 33);
+    color: antiquewhite;
+    padding: 1%;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    text-align: left;
+    color: rgb(231, 116, 33);
+    font-size: xx-large;
+}
+h3{
+    text-align: left;
+    font-size: x-large;
+}
+#full1{
+    color: black;
+    font-size: x-large;
+}
+#full2{
+    color: black;
+    font-size: x-large;
+}
+footer{
+    background-color: rgb(231, 116, 33);
+    padding: 3%;
+    margin: auto;
+    margin-top: auto;
+    text-align: center;
+
+}
+#insta{
+    padding: auto;
+    height: 5px;
+}
+#liked{
+    padding: auto;
+    height: auto;
+}
+#face{
+    padding: auto;
+    height: auto;
+}
