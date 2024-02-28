@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    .scene {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    #view {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #content-img, #content {
+        width: 50%; /
+    }
+}
