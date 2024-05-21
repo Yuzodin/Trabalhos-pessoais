@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+body{
+    background-image: url(/Imagens/Wallpapers/halloween-halloween-kills-michael-myers-hd-wallpaper-preview.jpg);
+    background-size: cover;
+}
+body#Jason{
+    background-image: url(/Imagens/Wallpapers/jason-voorhees-begging-prey-sdpt8vckfowxg5q2.jpg);
+    background-size: cover;
+}
+body#Pesadelo{
+  background-image: url(/Imagens/Wallpapers/freddy-krueger-horror-wallpaper-preview.jpg);
+  background-size: cover;
+}
+body#ghost{
+  background-image: url(/Imagens/Wallpapers/20375455.jpg);
+  background-size: cover;
+}
+body#boneco{
+  background-image: url(/Imagens/Wallpapers/chucky_1-e1626447285339.jpg);
+  background-size: cover;
+}
+body#leather{
+  background-image: url(/Imagens/Wallpapers/wp1976284.jpg);
+  background-size: cover;
+}
+h1 {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 2.0em;
+    font-style: normal;
+    text-align: left;
+    color: #fff;
+    margin: 0px;
+    opacity: 0; /* Começa invisível */
+    animation: aparecerH1 2s forwards; 
+}
+
+@keyframes aparecerH1 {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); 
+    }
+}
+p {
+    font-family: cursive;
+    font-size: 1.4em;
+    font-style: normal;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 50px;
+    width: 700px;
+    opacity: 0; 
+    animation: aparecer 2s forwards; 
+    line-height: 1.5em;
+}
+
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px); /* Começa 50px à esquerda da posição original */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* Termina na posição original */
+    }
+}

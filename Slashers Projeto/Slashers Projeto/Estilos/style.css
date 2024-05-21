@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+body{
+    background-color: black;
+}
+
+h1{
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 2.8em;
+    font-style: normal;
+    text-align: center;
+    color: #8C031C;
+    margin: 0px;
+}
+p{
+    font-family: cursive;
+    font-size: 1.4em;
+    font-style: normal;
+    text-align: center;
+    color: #8C031C;
+    margin-bottom: 50px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 80px; 
+    margin-left: 130px;
+    margin-bottom: 100px;
+}
+.container div:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out; 
+    transform: scale(1.1);
+}
+.sl1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 999px;
+    background-image: url('/Imagens/MM-1-1024x576-900x506.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.sl2 {
+    width: 250px;
+    height: 250px;
+    border-radius: 999px;
+    background-image: url('/Imagens/Jason-Voorhees-illustration-paint-by-numbers.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.sl3 {
+    width: 250px;
+    height: 250px;
+    border-radius: 999px;
+    background-image: url('/Imagens/freddy_krueger_by_omart_00_ddiz8t4-fullview.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.sl4 {
+    width: 250px;
+    height: 250px;
+    border-radius: 999px;
+    background-image: url('/Imagens/736bf085be6035d18e9c91bc1f12b985.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.sl5 {
+    width: 250px;
+    height: 250px;
+    border-radius: 999px;
+    background-image: url('/Imagens/e08d169f857e2aeaf0ff54d9aba722de.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.sl6 {
+    width: 250px;
+    height: 250px;
+    border-radius: 999px;
+    background-image: url('/Imagens/47d3c7e1029b6d11a2ed6711b9f2d1c895b482ad_hq.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.spam1 {
+    margin-top: 260px;
+}
+.spam2 {
+    margin-top: 260px;
+}
