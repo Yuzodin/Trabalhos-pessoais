@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #003366;  /* Azul Marinho */
+    --secondary-color: #F2811D;  /* Laranja */
+    --highlight-color: #D9AC25;  /* amarelo mustarda */
+    --background-color: #EDECE9;  /* Creme */
+    --text-color: #1B3659;  /* Azul escuro */
+    --white-color: #FFFFFF;  /* Branco */
+}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#seabout{
+    padding-top: 2vh;
+    padding: 10vh;
+    background-color: #032326;
+    height: 60vh;
+    display: flex;
+    align-items: right; 
+    justify-content: right;
+    gap: 20px;
+}
+#seabout img{
+    display: inline-block;
+    width: 40%
+}
+#seabout p{
+    width: 900px; 
+    font-family: "Source Code Pro", monospace;
+    font-size:  1.5em;
+    font-weight: bold;
+    color: #F0F2F2;
+}
+

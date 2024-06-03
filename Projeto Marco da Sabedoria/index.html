@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Imagens/Logomarca.jpeg" type="image/logomarca">
+    <link rel="stylesheet" href="Estilos/media-query.css">
+    <link rel="stylesheet" href="Estilos/style.css">
+    <link rel="stylesheet" href="Estilos/cursos.css">
+    <link rel="stylesheet" href="Estilos/about.css">
+    <link rel="stylesheet" href="Estilos/comunidade-contato.css">
+    <title>Marco da Sabedoria</title>
+</head>
+<body>
+    <header id="header" class="fixed-header">
+        <img src="Imagens/Logomarca-removebg-preview.png" alt="logomarca" id="logomarca">
+        <div id="container">
+            <img src="Imagens/lupa.png" alt="lupa" id="lupa">
+            <input type="text" id="pesquisa" placeholder="O que você quer aprender?" maxlength="65" oninput="filterCourses()">
+        <nav>
+            <ul>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#soft">Soft Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#comunidade">Comunidade</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+        <section class="imagem">
+            <p>Estudar é a chave para transformar vidas</p>
+        </section>
+
+        <!--Cursos-->
+
+        <div id="#cursos">
+            <section id="cursos">
+                <h1>Cursos de Tecnologia!</h1>
+                <div class="container">
+                    <div class="card">
+                        <img src="Imagens/preview Curso de Desenvolvimento Web minimalista.jpg" alt="Curso Web dev">
+                        <h2>Curso de Desenvolvimento Web</h2>
+                        <p>Este curso abrange:<br> HTML, CSS, JavaScript, frameworks como React e Angular.</p><br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/preview-image-for-a-javascript-cours-.jpeg" alt="Curso JavaScript">
+                        <h2>Curso de JavaScript<br>(básico ao avançado)</h2>
+                        <p>Aprenda conceitos básicos até técnicas avançadas de programação JavaScript.</p><br><br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/Curso de Phyton.jpg" alt="Curso Python">
+                        <h2>Curso de Python<br>(básico ao avançado)</h2>
+                        <p>Aprenda Python, uma linguagem de programação versátil e fácil de aprender.</p><br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/Java Curso.jpeg" alt="Curso Java">
+                        <h2>Curso de Java</h2>
+                        <p>Domine Java. <br>Aprenda desde os fundamentos até o desenvolvimento avançado de aplicativos desktop, web e móveis.</p>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/Mobile curso.jpeg" alt="Curso Desenvolvimento Mobile">
+                        <h2>Curso de Desenvolvimento Mobile</h2><br>
+                        <p>Aprenda a desenvolver para Android e iOS</p><br><br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/preview de um de Curso de Desenvolvimento de Software.jpeg" alt="Curso Desenvolvimento de Software">
+                        <h2>Curso de Desenvolvimento de Software</h2>
+                        <p>Este curso abrange:<br>Padrões de design, arquiteturas e testes.</p><br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/preview de um de Curso de Data Science e Machine Learning.jpg" alt="Curso Data Science e Machine Learning: Python">
+                        <h2>Curso de Data Science e Machine Learning</h2>
+                        <p>Este curso abrange:<br>Python, R, bibliotecas como TensorFlow e scikit-learn.</p><br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/Backend.jpeg" alt="Curso Back-End">
+                        <h2>Curso de Back-End</h2>
+                        <p>Este curso abrange:
+                            C, C#, PHP, Java, frameworks como Spring Boot, Laravel. Tambem aprenda sobre bancos de dados,  segurança e integrações.<br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/AWS, Azure, Docker, Kubernetes.jpeg" alt="Curso DevOps e Cloud Computing">
+                        <h2>Curso de DevOps e Cloud Computing</h2>
+                        <p>Aprenda a ultilizar AWS, Azure, Docker, Kubernetes.</p><br><br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/seguranca-da-informacao.jpeg" alt="Curso Segurança da informação">
+                        <h2>Curso de Segurança da informação</h2>
+                        <p>Aprenda a proteger sistemas e dados contra ameaças e vulnerabilidades.</p>.<br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/Desenvolvimento de games.jpeg" alt="Curso criaçao de games">
+                        <h2>Curso de Desenvolvimento de games</h2>
+                        <p>Este curso abrange:<br>desenvolver jogos digitais, desde a concepção da ideia até a implementação final.<br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/preview-of-a-full-stack-development-.jpeg" alt="Curso Full Stack">
+                        <h2>Curso de Full Stack</h2><br>
+                        <p>Torne-se  um desenvolvedor capaz de criar e gerenciar aplicações web completas, atuando tanto no front-end quanto no back-end.<br>
+                        <a href="#">Acessar</a>
+                        <p id="no-results" style="display: none;">Nenhum curso encontrado.</p>
+                    </div>
+            </section>
+        </div>    
+
+        <!--Softskilss e Carisma-->
+
+        <div id="soft">
+            <section id="softcursos">
+                <h1>Soft Skills e Carisma</h1>
+                <div class="container">
+                    <div class="card">
+                        <img src="Imagens/autocontrole.jpeg" alt="Curso Autocontrole">
+                        <h2>Autocontrole</h2>
+                        <p>Desenvolver habilidades de autocontrole e disciplina pessoal, capacitando os participantes a gerenciar suas emoções, impulsos e comportamentos de maneira eficaz.</p><br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/captivating-image-of-a-time-management-workshop.jpeg" alt="Curso Gestão do Tempo">
+                        <h2>Gestão do Tempo</h2><br>
+                        <p>Este curso abrange:<br>Métodos como Pomodoro eficiente, GTD (Getting Things Done).</p><br><br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/powerful-and-inspiring-image-of-a-woman-in-a-det.jpeg" alt="Curso Resiliência">
+                        <h2>Resiliência</h2><br>
+                        <p>Este curso abrange:<br> Técnicas para lidar com o estresse e a pressão no ambiente de trabalho.</p><br><br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/Curso de ingles ori.jpg" alt="Curso Inglês">
+                        <h2>Curso de Inglês para Desenvolvedores!</h2>
+                        <p>Projetado especificamente para desenvolvedores de software que desejam aprimorar suas habilidades em inglês técnico e profissional.</p><br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/comunicacao-eficaz.jpeg" alt="Curso Comunicação Eficaz">
+                        <h2>Comunicação Eficaz</h2>
+                        <p>Este curso abrange:<br> Habilidades de apresentação, storytelling, escuta ativa.</p><br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/powerful-and-evocative-painting-of-alexander-.jpeg" alt="Curso Liderança">
+                        <h2>Liderança</h2><br>
+                        <p>Como liderar equipes de forma inspiradora e eficaz.</p><br><br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/Construção de trabalho em equipe.jpeg" alt="Curso Trabalho em Equipe">
+                        <h2>Trabalho em Equipe</h2><br>
+                        <p>Construção de relações positivas, resolução de conflitos.</p><br><br>
+                        <a href="#">Acessar</a>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/professional-networking-event.jpeg" alt="Curso Networking">
+                        <h2>Networking</h2>
+                        <p>Este curso abrange:<br>Estratégias para construir e manter uma rede profissional.<br><br><br>
+                        <a href="#">Acessar</a>
+                    </div>
+            </section>
+        </div>
+
+        <!--About-->
+
+        <div id="about">
+            <section id="seabout">
+                <img src="Imagens/Logomarca-removebg-preview.png" alt="imagem about">
+                <p>O curso "Marco da Sabedoria" é a chave para desbloquear seu potencial máximo. A combinação de hard e soft skills é essencial para se destacar em um mercado de trabalho cada vez mais competitivo e dinâmico. Junte-se a nós e transforme sua carreira com conhecimentos e habilidades que farão a diferença! <br><br><br>
+                Junte-se a nós nesta jornada de transformação e embarque em uma jornada rumo à excelência profissional. Não apenas transforme sua carreira, mas também transforme a si mesmo, adquirindo habilidades e conhecimentos que não apenas farão a diferença no ambiente de trabalho, mas também na sua vida como um todo.</p>
+            </section>
+        </div>
+
+        <!--Comunidade-->
+
+        <div id="comunidade">
+            <section id="comu">
+                <div id="discordimagem">
+                    <img src="Imagens/discordia.png" alt="discord icon">
+                    <p>Olá, futuros sábios! <br>
+                        Você está convidado a se juntar à nossa inspiradora comunidade de estudo no Discord, dedicada ao curso "Marco da Sabedoria"! <br><br>
+                        Link: <a href="#">[Link de Convite].com.br</a><br><br>
+                        Estamos ansiosos para conhecê-lo e tornar nossa jornada de aprendizado ainda mais rica com a sua presença!
+                        Até breve, <br><br>
+                        Yuzodin e Equipe Marco da Sabedoria.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!--Contato-->
+        <div id="contato">
+            <section id="cont">
+                <div class="redes-sociais">
+                    <p>Siga-nos nas redes sociais</p><br><br>
+                    <img src="Imagens/linkedin.png" alt="linkedin logo">
+                    <img src="Imagens/facebook.png" alt="facebook logo">
+                    <img src="Imagens/youtube.png" alt="youtube logo">
+                    <img src="Imagens/instagram.png" alt="instagram logo">
+                </div>
+            </section>
+        </div>
+        <footer>
+            <p>website created by <a href="https://github.com/Yuzodin" target="_blank" rel="external">Yuri (Yuzodin)</a></p>
+        </footer>
+
+        <script src="app.js"></script>
+</body>
+</html>

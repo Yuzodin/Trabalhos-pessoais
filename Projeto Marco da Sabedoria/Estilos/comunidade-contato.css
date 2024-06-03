@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #003366;  /* Azul Marinho */
+    --secondary-color: #F2811D;  /* Laranja */
+    --highlight-color: #D9AC25;  /* amarelo mustarda */
+    --background-color: #EDECE9;  /* Creme */
+    --text-color: #1B3659;  /* Azul escuro */
+    --white-color: #FFFFFF;  /* Branco */
+}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+#comu{
+    padding-top: 2vh;
+    padding: 10vh;
+    background-image: url(../Imagens/pexels-asim-razan-32997.jpg);
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+#discordimagem{
+    background-color: #060606ae;
+    
+    height: 80vh;
+    display: flex;
+    align-items: right; 
+    justify-content: right;
+    gap: 20px;
+    
+}
+#discordimagem img{
+    padding-top: 95px;
+    padding-left: 5px;
+    height: 70%;
+}
+#discordimagem p{
+    padding-left: 15px;
+    padding-top: 105px;
+    max-width: 900px; 
+    margin-top: 20px;
+    font-family: "Source Code Pro", monospace;
+    font-size:  1.6em;
+    font-weight: bolder;
+    color: #F0F2F2;
+}
+#discordimagem a{
+    color: #495A8C;
+    text-decoration: none;
+}
+#cont{
+    padding-top: 2vh;
+    padding: 10vh;
+    background-color: var(--background-color);
+    height: 250px;
+}
+#cont p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size:  2.0em;
+}
+.redes-sociais{
+    white-space: nowrap; 
+    text-align: center;
+    cursor: pointer;
+}
+.redes-sociais img{
+    display: inline-block;
+    width: 25%; 
+    
+}
+.redes-sociais img{
+    height: 110px;
+    width: 110px;
+    padding: 20px;
+}
+footer{
+    background-color: var(--primary-color);
+    text-align: center;
+}
+footer > p{
+    padding: 20px;
+    color: var(--white-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}

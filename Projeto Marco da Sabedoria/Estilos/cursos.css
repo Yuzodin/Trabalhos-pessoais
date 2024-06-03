@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #003366;  /* Azul Marinho */
+    --secondary-color: #F2811D;  /* Laranja */
+    --highlight-color: #D9AC25;  /* amarelo mustarda */
+    --background-color: #EDECE9;  /* Creme */
+    --text-color: #1B3659;  /* Azul escuro */
+    --white-color: #FFFFFF;  /* Branco */
+}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#cursos{
+    padding-top: 2vh;
+    padding: 10vh;
+    background-image: url(../Imagens/pexels-danbuilds-633409.jpg);
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 1750px;
+}
+h1{
+    width: 500px;
+    padding: 10px;
+    background-color: var(--background-color);
+    box-shadow: 2px 2px 10px black;
+    text-align: center;
+    display: block;
+    margin: auto;
+    color: #007bff;
+    font-family: "Source Code Pro", monospace;
+    border-radius: 10px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr)); /* Quatro colunas com largura flexível */
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; 
+    
+}
+
+.card {
+    margin-top: 35px;
+    margin-bottom: 5px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--background-color);
+    transition: opacity 0.3s ease;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card p {
+    margin-top: 10px;
+    font-family: "Source Code Pro", monospace;
+    padding-bottom: 5px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 130px;
+    font-family: "Source Code Pro", monospace;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+}
+#softcursos{
+    padding-top: 2vh;
+    padding: 10vh;
+    background-image: linear-gradient(to top, #0D0126, #351B59);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 1200px;
+}
