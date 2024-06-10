@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/Logomarca.jpeg" type="image/logomarca">
+    <link rel="stylesheet" href="Estilos/matricula.css">
+    <title>Marco da Sabedoria</title>
+</head>
+<body>
+    <div class="novoformulario">
+        <h1>Vamos completar a sua matrícula</h1>
+        <p id="subtext02">preencha o formulário</p>
+        <form action="app.js" method="post" autocomplete="on">
+            <label for="inome">Nome
+                <p><input type="text" name="nome" id="inome" class="novoinput" placeholder="Nome e Sobrenome"
+                    required minlength="5" autocomplete="username"></p>
+            </label>
+            <label for="0iemail">E-mail
+                <p><input type="email" name="e-mail" id="0iemail" class="novoinput" placeholder="Digite seu e-mail"
+                    required maxlength="200" autocomplete="email"></p>
+            </label>
+            <label for="itelefone">Telefone
+                <p><input type="tel" name="telefone" id="itelefone" class="novoinput" placeholder="(00) 0 0000-0000"
+                    required pattern="\(\d{2}\) \d \d{4}-\d{4}"></p>
+            </label>
+            <label for="0isenha">Nova senha
+                <p><input type="password" name="senha" id="0isenha" class="novoinput" placeholder="Min 6 caracteres"
+                required minlength="6" autocomplete="new-password"></p>
+            </label>
+            <label for="0isenha">Confirme sua senha
+                <p><input type="password" name="senha" id="0isenha" class="novoinput" 
+                required minlength="6" autocomplete="new-password"></p>
+            </label>
+            <p id="Formas">Forma de Pagamento</p>
+            <div class="payment-methods">
+                <div class="payment-method">
+                    <input type="radio" id="pix" name="payment-method" value="pix" required>
+                    <label for="pix" class="pix-icon"></label>
+                    <p class="descrrip">Pix</p>
+                </div>
+                <div class="payment-method">
+                    <input type="radio" id="card" name="payment-method" value="card" required>
+                    <label for="card" class="card-icon"></label>
+                    <p class="descrrip">Cartão</p>
+                </div>
+            </div>
+        
+            <input type="submit" value="Acessar" id="butao"><br>
+        </form>
+    </div>
+
+</body>
+</html>
