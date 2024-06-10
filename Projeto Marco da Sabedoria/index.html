@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="Estilos/about.css">
     <link rel="stylesheet" href="Estilos/comunidade-contato.css">
     <link rel="stylesheet" href="Estilos/planos.css">
+    <link rel="stylesheet" href="Estilos/carrosel.css">
     <title>Marco da Sabedoria</title>
 </head>
 <body>
@@ -30,9 +31,21 @@
                 </nav>
             </div>
             <p>Estudar é a chave para transformar vidas</p>
-            <button id="Entrar">Entrar</button>
-            <a href="#Planos"><button id="Cadastro">Matricule-se</button></a>
+            <a href="login.html" target="_blank" rel="external"><button id="Entrar">Entrar</button></a>
+            <a href="login.html" target="_blank" rel="external"><button id="Cadastro">Matricule-se</button></a>
         </header>
+
+        <!--Carrosel-->
+
+        <section id="carrosel">
+            <div class="imga">
+                <img src="Imagens/promoçao.jpeg" alt="Imagem 1" class="active">
+                <img src="Imagens/Crescimentog.jpeg" alt="Imagem 2">
+            </div>
+            <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="next" onclick="changeImage(1)">&#10095;</a>
+        </section>
+        
 
         <!--Cursos-->
 
@@ -195,26 +208,41 @@
                     <div id="pro">
                         <img src="Imagens/graduado genio.png" alt="icone genio">
                         <h2>Gênio</h2>
-                        <p>🗸Acesso a Todos os cursos</p>
-                        <p>🗸Desafios</p>
-                        <p>🗸Mentorias</p>
-                        <p>🗸Portfólio</p>
-                        <p>🗸Certificado</p>    
-                        <p class="price"><small>12x</small> R$90</p> 
-                        <p>à vista R$1.080</p> 
+                        <p>🗸 Acesso a Todos os cursos</p>
+                        <p>🗸 Desafios</p>
+                        <p>🗸 Mentorias</p>
+                        <p>🗸 Portfólio</p>
+                        <p>🗸 Certificado</p>    
+                        <p class="price"><small>12x</small> R$60</p> 
+                        <p>à vista R$720</p> 
                         <button class="meu-botao">Matricule-se</button>
                     </div>
                     <div id="plus">
                         <img src="Imagens/conhecimento.png" alt="icone sabio">
                         <h2>Sábio</h2>
-                        <p>🗸Acesso a Todos os cursos</p>
-                        <p>🗸Desafios</p>
-                        <p>🗸Mentorias</p>
-                        <p>🗸Portfólio</p>
-                        <p>🗸Certificado</p> 
-                        <p>🗸Avaliação e feedback de profissionais</p>
-                        <p>🗸Hospedagem</p>  
-                        <p>🗸Suporte do Marco! Nossa inteligência artificia</p> 
+                        <p>🗸 Acesso a Todos os cursos</p>
+                        <p>🗸 Desafios</p>
+                        <p>🗸 Mentorias</p>
+                        <p>🗸 Portfólio</p>
+                        <p>🗸 Certificado</p> 
+                        <p>🗸 Destaques de projetos</p>
+                        <p>🗸 Vitalicio por 2 Anos</p>  
+                        <p>🗸 Suporte do Marco! Nossa inteligência artificia</p> 
+                        <p class="price"><small>12x</small> R$80</p> 
+                        <p>à vista R$960</p> 
+                        <button class="meu-botao">Matricule-se</button>
+                    </div>
+                    <div id="vital">
+                        <img src="Imagens/companhia.png" alt="icone sabio">
+                        <h2>Empresas</h2>
+                        <p>🗸 Acesso a Todos os cursos</p>
+                        <p>🗸 Desafios</p>
+                        <p>🗸 Mentorias</p>
+                        <p>🗸 Certificado</p> 
+                        <p>🗸 Destaques de projetos</p>
+                        <p>🗸 Vitalicio por 3 Anos</p>
+                        <p>🗸 Hospedagem</p>  
+                        <p>🗸 Suporte do Marco! Nossa inteligência artificia</p> 
                         <p class="price"><small>12x</small> R$106</p> 
                         <p>à vista R$1.280</p> 
                         <button class="meu-botao">Matricule-se</button>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/Logomarca.jpeg" type="image/logomarca">
+    <link rel="stylesheet" href="Estilos/login.css">
+    <title>Marco da Sabedoria</title>
+</head>
+<body>
+    <div class="formulario">
+        <h1>Já estuda com a gente?</h1>
+        <p id="subtext">Faça seu login e boa aula!</p>
+        <p id="subt">Digite seus dados nos campos abaixo:</p>
+        <form action="app.js" method="post" autocomplete="on">
+            <label for="iemail">E-mail
+                <p><input type="email" name="email" id="iemail" placeholder="Digite seu E-mail" autocomplete="email" 
+                maxlength="200" required></p>   
+                <label for="isenha">Senha
+                    <p><input type="password" name="senha" id="isenha" placeholder="Digite sua Senha" 
+                    autocomplete="current-password" minlength="5" required></p> 
+                </label>
+            </label>
+            <input type="submit" value="Entrar" id="butao">
+            <input type="submit" value="Entrar com Google" id="EntrarGO">
+            <a id="sengpt" href="novolo.html">Ainda não tem matricula? Faça agora</a>
+        </form>
+    </div>
+
+    <footer>
+        <p>website created by <a href="https://github.com/Yuzodin" target="_blank" rel="external">Yuri (Yuzodin)</a></p>
+    </footer>
+</body>
+</html>
