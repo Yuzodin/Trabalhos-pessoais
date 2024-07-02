@@ -1,0 +1,414 @@
+/*
+    primary color: #F2F2F2
+    word color: #D99B29
+    baner color: #A09FBF
+    black color: ##0D0D0D
+*/
+/* Reset básico e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #F2F2F2;
+    color: #0D0D0D;
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #F2F2F2;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.logo img {
+    max-width: 110px; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 2.4em;
+    cursor: pointer;
+    border: none;
+    color: #0D0D0D;
+    margin-right: 15px;
+}
+
+nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #F2F2F2;
+    display: none;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #0D0D0D;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+nav a:hover {
+    background-color: #D9D9D9;
+}
+
+#menu-toggle:checked + .menu-icon + nav {
+    display: block;
+}
+.iconsheader{
+    display: none;
+}
+.iconheart{
+    display: none;
+}
+.cart {
+    font-size: 0.8em;
+    color: #0D0D0D;
+    margin-right: 20px;
+}
+.cart img{
+    max-width: 15px;
+}
+/* Banner */
+.banner {
+    background-image: url(../Imagens/Winter-moda.jpeg);
+    padding: 60px 20px;
+    text-align: center;
+    color: #F2F2F2;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background-color: #28395926;
+}
+
+.banner a {
+    background-color: #F2F2F2;
+    color: #0D0D0D;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+.banner a:hover{
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+    transition: background-color 0.3s ease;
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    margin: 0px 0;
+    background-color: #F2F2F2;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #F2F2F2;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.price {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #0D0D0D;
+}
+
+.carousel-item p {
+    margin: 5px 0;
+}
+
+.carousel-item a {
+    color: #0D0D0D;
+    text-decoration: none;
+}
+
+.carousel-item a:hover {
+    text-decoration: underline;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    height: 45px;
+    transform: translateY(-50%);
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.moda{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: #F2F2F2;
+    text-align: center;
+    flex-direction: column;
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    margin: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000080;
+    opacity: 1;
+}
+
+.overlay p {
+    color: #F2F2F2;
+    font-size: 30px;
+    padding: 20px;
+    margin: 0;
+}
+
+.button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #A6A6A6;
+    color: #0D0D0D;
+}
+
+
+.explore {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #0D0D0D;
+}
+
+.explore h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #F2F2F2;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.categoria {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.categoria img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.categoria p{
+    color: #F2F2F2;
+    font-size: large;
+    padding: 15px;
+}
+.categoria h3 {
+    font-size: 24px;
+    padding: 15px;
+    margin: 0;
+    color: #F2F2F2;
+}
+.explore a{
+    color: #F2F2F2;
+    text-decoration: none;
+    padding: 15px;
+}
+.explore a:hover{
+    text-decoration: underline;
+}
+/* Formulário da Newsletter */
+
+.newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    width: calc(100% - 120px);
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: #A6A6A6;
+    color: #0D0D0D;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+
+footer {
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+    padding: 40px 20px;
+    border-top: 1px solid #D9D9D9;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 220px;
+    margin: 20px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: #F2F2F2;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #A6A6A6;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.footer-section button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #A6A6A6;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section button:hover {
+    background-color: #A6A6A6;
+}
+
+.footer-section .social a {
+    font-size: 20px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-section .social a:hover {
+    color: #A6A6A6;
+}
