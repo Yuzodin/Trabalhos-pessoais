@@ -1,0 +1,173 @@
+/* Reset and Base Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+/* General Layout Styles */
+#wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#main {
+    grid-column: 1 / span 1;
+}
+
+#sidebar {
+    grid-column: 2 / span 1;
+}
+
+/* Header Styles */
+#header {
+    padding: 20px;
+    background: #8B0000;
+}
+
+#header h1 a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Banner Styles */
+#banner {
+    position: relative;
+    padding: 50px;
+    background: url('images/banner.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+
+#banner .content {
+    position: relative;
+    z-index: 1;
+}
+
+#banner h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#banner p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Menu Section Styles */
+section {
+    padding: 50px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.dish {
+    text-align: center;
+}
+
+.dish img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.dish h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.dish p {
+    font-size: 1rem;
+}
+
+/* Sidebar Styles */
+#sidebar {
+    background: #8B0000;
+    color: #fff;
+    padding: 20px;
+}
+
+#sidebar h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#sidebar p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
+
+.contact li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+#footer {
+    padding: 20px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    clear: both;
+    position: relative;
+    margin-top: 50px;
+}
+
+#footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    #sidebar {
+        display: none;
+    }
+}
+
