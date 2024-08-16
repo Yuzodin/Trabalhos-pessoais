@@ -1,0 +1,133 @@
+@use '_variaveis';
+@use 'mixins';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: variaveis.$Background;
+    color: variaveis.$CordeTexto;
+
+    a{
+    color: variaveis.$CorPrincipal;
+    text-decoration: none;
+    transition: 0.4s;
+
+    &:hover{
+        color: variaveis.$CordeHover;
+    }
+}
+    ul{
+        list-style: none;
+    }
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    @include mixins.container;
+
+    &-brand{
+        color: variaveis.$CorPrincipal;
+        font-size: 3.0rem;
+    }
+    &-brand:hover{
+        color: variaveis.$CordeTexto;
+    }
+    &-navbar{
+        ul{
+            height: 100%;
+            @include mixins.flex-center
+        }
+        li{
+            margin: 0 1rem;
+            text-transform: uppercase;
+            font-size: .8rem;
+        }
+    }
+    &-social-media{
+        ul{
+           @include mixins.flex-center;
+           height: 100%;
+        }
+        li{
+            margin: 0 1rem;
+        }
+    }
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+
+    &-card{
+        width: 41%;
+        height: 400px;
+        margin-bottom: 4%;
+        @include mixins.flex-center;
+        flex-direction: column;
+        color: variaveis.$CorPrincipal;
+    }
+
+    &-card-title{
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+    &-card-btn{
+        padding: .6rem 2rem;
+        border: 2px solid variaveis.$CordeTexto;
+        color: variaveis.$CorPrincipal;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.3s;
+    }
+    &-card-btn:hover{
+        background: variaveis.$CordeTexto;
+        color:variaveis.$Background
+    }
+
+    #card-1{
+        background-image: url(../Img/animais.jpg);
+        @include mixins.bg-image;
+    }
+    #card-2{
+        background-image: url(../Img/arquitetura.jpg);
+        @include mixins.bg-image;
+    } #card-3{
+        background-image: url(../Img/cidade.jpg);
+        @include mixins.bg-image;
+    } #card-4{
+        background-image: url(../Img/decoracao.jpg);
+        @include mixins.bg-image;
+    } #card-5{
+        background-image: url(../Img/esportes.jpg);
+        @include mixins.bg-image;
+    } #card-6{
+        background-image: url(../Img/natureza.jpg);
+        @include mixins.bg-image;
+    } #card-7{
+        background-image: url(../Img/paisagem.jpg);
+        @include mixins.bg-image;
+    } #card-8{
+        background-image: url(../Img/pessoas.jpg);
+        @include mixins.bg-image;
+    } #card-9{
+        background-image: url(../Img/refeicoes.jpg);
+        @include mixins.bg-image;
+    }
+}
+footer{
+    text-align: center;
+    padding-bottom: 2rem;
+
+  span{
+    font-weight: bold;
+    color: variaveis.$CordeTexto
+  }
+}

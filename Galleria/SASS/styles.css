@@ -1,0 +1,237 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0D0D0D;
+  color: #F2D027;
+}
+body a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body a:hover {
+  color: #F2A81D;
+}
+body ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+.header-brand {
+  color: #fff;
+  font-size: 3rem;
+}
+.header-brand:hover {
+  color: #F2D027;
+}
+.header-navbar ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-navbar li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.header-social-media ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.header-social-media li {
+  margin: 0 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  padding: 0;
+}
+.gallery-card {
+  width: 41%;
+  height: 400px;
+  margin-bottom: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.gallery-card-title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.gallery-card-btn {
+  padding: 0.6rem 2rem;
+  border: 2px solid #F2D027;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.gallery-card-btn:hover {
+  background: #F2D027;
+  color: #0D0D0D;
+}
+.gallery #card-1 {
+  background-image: url(../Img/animais.jpg);
+  width: 400px;
+  margin-bottom: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-1:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  opacity: 75%;
+}
+.gallery #card-2 {
+  background-image: url(../Img/arquitetura.jpg);
+  width: 400px;
+  margin-bottom: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-2:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  opacity: 75%;
+}
+.gallery #card-3 {
+  background-image: url(../Img/cidade.jpg);
+  width: 400px;
+  margin-bottom: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-3:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  opacity: 75%;
+}
+.gallery #card-4 {
+  background-image: url(../Img/decoracao.jpg);
+  width: 400px;
+  margin-bottom: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-4:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  opacity: 75%;
+}
+.gallery #card-5 {
+  background-image: url(../Img/esportes.jpg);
+  width: 400px;
+  margin-bottom: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-5:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  opacity: 75%;
+}
+.gallery #card-6 {
+  background-image: url(../Img/natureza.jpg);
+  width: 400px;
+  margin-bottom: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-6:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  opacity: 75%;
+}
+.gallery #card-7 {
+  background-image: url(../Img/paisagem.jpg);
+  width: 400px;
+  margin-bottom: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-7:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  opacity: 75%;
+}
+.gallery #card-8 {
+  background-image: url(../Img/pessoas.jpg);
+  width: 400px;
+  margin-bottom: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-8:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  opacity: 75%;
+}
+.gallery #card-9 {
+  background-image: url(../Img/refeicoes.jpg);
+  width: 400px;
+  margin-bottom: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-9:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  opacity: 75%;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+footer span {
+  font-weight: bold;
+  color: #F2D027;
+}/*# sourceMappingURL=styles.css.map */

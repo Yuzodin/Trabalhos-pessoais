@@ -1,0 +1,27 @@
+@use 'variaveis';
+
+@mixin container{
+    max-width: variaveis.$ContainerWidth;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+}
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin bg-image{
+    width: 400px;
+    margin-bottom: 35px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: .6s;
+
+    &:hover{
+        background-size: 110%;
+        filter: grayscale(0%);
+        opacity: 75%;
+    }
+}
